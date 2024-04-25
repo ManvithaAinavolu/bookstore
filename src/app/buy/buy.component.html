@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Available Books</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let book of books">
+      <img [src]="getImageUrl(book.BOOKIMAGE)" class="card-img-top" alt="Book Image" (error)="handleImageError($event)">
+      <div class="card-body">
+        <h5 class="card-title">{{ book.NAME }}</h5>
+        <p class="card-text">Author: {{ book.AUTHOR }}</p>
+        <p class="card-text">Description: {{ book.DESCRIPTION }}</p>
+        <p class="card-text">Price: ${{ book.PRICE }}</p>
+        <button class="btn btn-primary" (click)="OrderForm()">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>

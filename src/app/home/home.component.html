@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="background-image">
+    <div class="quotation">
+        <p>"Books: They may be Life Lessons, Memorable journeys, stores of someone."</p>
+        <p>Reading them never changes the story, but you can change yourself from within."</p>
+        <h6>- A. Manvitha</h6>
+    </div>
+  </div>
+  <div class="content">
+    <div class="about-section">
+      <div class="about-image">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2019/10/reading-book-732x549-thumbnail.jpg" alt="About Image">
+      </div>
+      <div class="about-text">
+        <h2>About Our Bookstore</h2>
+        <p>Welcome to our bookstore! We strive to provide a wide selection of books to cater to every reader's taste.</p>
+        <p>As the founder of this bookstore, I am deeply passionate about developing applications that connect readers with the stories that resonate with them. Crafting this platform has been a labor of love, fueled by my dedication to fostering a community of readers and learners.</p>
+        <p>With each feature and improvement, I aim to create an immersive and user-friendly experience that not only facilitates book browsing and purchasing but also ignites a love for reading and exploration.</p>
+        <p>Thank you for joining me on this journey, and I hope you find joy and inspiration within these pages.</p>
+      </div>
+    </div>
+    <div class="latest-books">
+      <h3>Latest Books</h3>
+      <div class="card-container">
+        <div class="card" *ngFor="let book of latestBooks">
+          <img [src]="book.imageUrl" alt="Book Cover">
+          <h4>{{ book.title }}</h4>
+          <p>{{ book.author }}</p>
+          <p>{{ book.description }}</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="popular-books">
+      <h3>Popular Books</h3>
+      <div class="card-container">
+        <div class="card" *ngFor="let book of popularBooks">
+          <img [src]="book.imageUrl" alt="Book Cover">
+          <h4>{{ book.title }}</h4>
+          <p>{{ book.author }}</p>
+          <p>{{ book.description }}</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-item">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Email: contact@bookstore.com</li>
+          <li>Phone: +91 9876543210</li>
+          <li>Address: Andhra Pradesh, India</li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 All rights reserved by Manvitha Ainavolu</p>
+    </div>
+  </footer>
+  
+</div>

@@ -1,0 +1,41 @@
+<div class="order-form-container">
+    <div class="order-header">
+      <h2>Order Details</h2>
+      <p>Please fill in the following details to complete your order.</p>
+    </div>
+<div class="order-form">
+    <h2>Order Details</h2>
+    <form (ngSubmit)="submitOrder()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="order.name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" [(ngModel)]="order.phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" [(ngModel)]="order.address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" [(ngModel)]="order.country" required>
+      </div>
+      <div class="form-group">
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode" name="pincode" [(ngModel)]="order.pincode" required>
+      </div>
+      <div class="form-group">
+        <label for="items">Number of Items</label>
+        <input type="number" id="items" name="items" [(ngModel)]="order.items" required>
+      </div>
+      <div class="form-group">
+        <label for="totalPrice">Total Price</label>
+        <input type="text" id="totalPrice" name="totalPrice" [(ngModel)]="order.totalPrice" required>
+      </div>
+      <button type="submit">Proceed to Pay</button>
+    </form>
+  </div>
+  </div>
+  

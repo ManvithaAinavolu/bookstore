@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .success-container {
+    text-align: center;
+  }
+  
+  .success-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .success-text {
+    font-size: 36px; /* Adjust size as needed */
+    margin-top: 20px;
+    color: green; /* Or any other color */
+  }
+  
+  .success-message {
+    font-size: 18px; /* Adjust size as needed */
+    margin-top: 10px;
+    color: green; /* Or any other color */
+  }
+  
+  .go-back-link {
+    margin-top: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: blue; /* Or any other color */
+  }
+  
